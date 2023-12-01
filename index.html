@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MBTI 테스트</title>
+    <link rel="stylesheet" href="mbti.css" />
+  </head>
+  <body>
+    <div id="header">
+      <p style="color: white; font-size: 38px">
+        <span class="custom-text">조우민</span>님의
+        <span class="custom-text1">MBTI</span>는 무엇인가요?
+      </p>
+      <p style="color: white">
+        재미로 알아보는 나의 <span class="custom-text2">성격유형</span>!
+      </p>
+      <p style="color: white">
+        당신의 진짜 모습을 담은 <span class="custom-text2">MBTI</span>를
+        알아보세요.
+      </p>
+    </div>
+    <form id="mbtiForm">
+      <!-- E / I -->
+      <div class="question-group" id="group1">
+        <br />
+        <br />
+        <br />
+        <p>당신은 사람들과 함께 있을 때 에너지를 얻는 편인가요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q1" id="q1_E3" value="E3" />
+        <label for="q1_E3"></label>
+        <input type="radio" name="q1" id="q1_E2" value="E2" />
+        <label for="q1_E2"></label>
+        <input type="radio" name="q1" id="q1_E1" value="E1" />
+        <label for="q1_E1"></label>
+        <input type="radio" name="q1" id="q1_EI0" value="EI0" />
+        <label for="q1_EI0"></label>
+        <input type="radio" name="q1" id="q1_I1" value="I1" />
+        <label for="q1_I1"></label>
+        <input type="radio" name="q1" id="q1_I2" value="I2" />
+        <label for="q1_I2"></label>
+        <input type="radio" name="q1" id="q1_I3" value="I3" />
+        <label for="q1_I3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>
+          사회적인 행사에서 어떤 역할을 맡거나 주도적으로 참여하시는 편인가요?
+        </p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q2" id="q2_E3" value="E3" />
+        <label for="q2_E3"></label>
+        <input type="radio" name="q2" id="q2_E2" value="E2" />
+        <label for="q2_E2"></label>
+        <input type="radio" name="q2" id="q2_E1" value="E1" />
+        <label for="q2_E1"></label>
+        <input type="radio" name="q2" id="q2_EI0" value="EI0" />
+        <label for="q2_EI0"></label>
+        <input type="radio" name="q2" id="q2_I1" value="I1" />
+        <label for="q2_I1"></label>
+        <input type="radio" name="q2" id="q2_I2" value="I2" />
+        <label for="q2_I2"></label>
+        <input type="radio" name="q2" id="q2_I3" value="I3" />
+        <label for="q2_I3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>외부 환경과 사건들에 대한 관심과 호기심을 가지고 있나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q3" id="q3_E3" value="E3" />
+        <label for="q3_E3"></label>
+        <input type="radio" name="q3" id="q3_E2" value="E2" />
+        <label for="q3_E2"></label>
+        <input type="radio" name="q3" id="q3_E1" value="E1" />
+        <label for="q3_E1"></label>
+        <input type="radio" name="q3" id="q3_EI0" value="EI0" />
+        <label for="q3_EI0"></label>
+        <input type="radio" name="q3" id="q3_I1" value="I1" />
+        <label for="q3_I1"></label>
+        <input type="radio" name="q3" id="q3_I2" value="I2" />
+        <label for="q3_I2"></label>
+        <input type="radio" name="q3" id="q3_I3" value="I3" />
+        <label for="q3_I3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>타인과 함께 일하면서 의사소통과 협업을 즐기시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q4" id="q4_E3" value="E3" />
+        <label for="q4_E3"></label>
+        <input type="radio" name="q4" id="q4_E2" value="E2" />
+        <label for="q4_E2"></label>
+        <input type="radio" name="q4" id="q4_E1" value="E1" />
+        <label for="q4_E1"></label>
+        <input type="radio" name="q4" id="q4_EI0" value="EI0" />
+        <label for="q4_EI0"></label>
+        <input type="radio" name="q4" id="q4_I1" value="I1" />
+        <label for="q4_I1"></label>
+        <input type="radio" name="q4" id="q4_I2" value="I2" />
+        <label for="q4_I2"></label>
+        <input type="radio" name="q4" id="q4_I3" value="I3" />
+        <label for="q4_I3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>새로운 사람들과 쉽게 친구가 되는 경향이 있나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q5" id="q5_E3" value="E3" />
+        <label for="q5_E3"></label>
+        <input type="radio" name="q5" id="q5_E2" value="E2" />
+        <label for="q5_E2"></label>
+        <input type="radio" name="q5" id="q5_E1" value="E1" />
+        <label for="q5_E1"></label>
+        <input type="radio" name="q5" id="q5_EI0" value="EI0" />
+        <label for="q5_EI0"></label>
+        <input type="radio" name="q5" id="q5_I1" value="I1" />
+        <label for="q5_I1"></label>
+        <input type="radio" name="q5" id="q5_I2" value="I2" />
+        <label for="q5_I2"></label>
+        <input type="radio" name="q5" id="q5_I3" value="I3" />
+        <label for="q5_I3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+      </div>
+      <!-- N /S -->
+      <div class="question-group" id="group2">
+        <br />
+        <br />
+        <br />
+        <p>미래에 대한 비전과 가능성에 관심과 흥미를 가지고 있나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q6" id="q6_N3" value="N3" />
+        <label for="q6_N3"></label>
+        <input type="radio" name="q6" id="q6_N2" value="N2" />
+        <label for="q6_N2"></label>
+        <input type="radio" name="q6" id="q6_N1" value="N1" />
+        <label for="q6_N1"></label>
+        <input type="radio" name="q6" id="q6_NS0" value="NS0" />
+        <label for="q6_NS0"></label>
+        <input type="radio" name="q6" id="q6_S1" value="S1" />
+        <label for="q6_S1"></label>
+        <input type="radio" name="q6" id="q6_S2" value="S2" />
+        <label for="q6_S2"></label>
+        <input type="radio" name="q6" id="q6_S3" value="S3" />
+        <label for="q6_S3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>추상적인 개념과 이론에 대해 탐구하고 이해하려는 경향이 있나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q7" id="q7_N3" value="N3" />
+        <label for="q7_N3"></label>
+        <input type="radio" name="q7" id="q7_N2" value="N2" />
+        <label for="q7_N2"></label>
+        <input type="radio" name="q7" id="q7_N1" value="N1" />
+        <label for="q7_N1"></label>
+        <input type="radio" name="q7" id="q7_NS0" value="NS0" />
+        <label for="q7_NS0"></label>
+        <input type="radio" name="q7" id="q7_S1" value="S1" />
+        <label for="q7_S1"></label>
+        <input type="radio" name="q7" id="q7_S2" value="S2" />
+        <label for="q7_S2"></label>
+        <input type="radio" name="q7" id="q7_S3" value="S3" />
+        <label for="q7_S3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>새로운 아이디어와 가능성에 열린 마음을 가지고 있나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q8" id="q8_N3" value="N3" />
+        <label for="q8_N3"></label>
+        <input type="radio" name="q8" id="q8_N2" value="N2" />
+        <label for="q8_N2"></label>
+        <input type="radio" name="q8" id="q8_N1" value="N1" />
+        <label for="q8_N1"></label>
+        <input type="radio" name="q8" id="q8_NS0" value="NS0" />
+        <label for="q8_NS0"></label>
+        <input type="radio" name="q8" id="q8_S1" value="S1" />
+        <label for="q8_S1"></label>
+        <input type="radio" name="q8" id="q8_S2" value="S2" />
+        <label for="q8_S2"></label>
+        <input type="radio" name="q8" id="q8_S3" value="S3" />
+        <label for="q8_S3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>상상력을 기반으로 창의적인 해결책을 찾는 것을 좋아하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q9" id="q9_N3" value="N3" />
+        <label for="q9_N3"></label>
+        <input type="radio" name="q9" id="q9_N2" value="N2" />
+        <label for="q9_N2"></label>
+        <input type="radio" name="q9" id="q9_N1" value="N1" />
+        <label for="q9_N1"></label>
+        <input type="radio" name="q9" id="q9_NS0" value="NS0" />
+        <label for="q9_NS0"></label>
+        <input type="radio" name="q9" id="q9_S1" value="S1" />
+        <label for="q9_S1"></label>
+        <input type="radio" name="q9" id="q9_S2" value="S2" />
+        <label for="q9_S2"></label>
+        <input type="radio" name="q9" id="q9_S3" value="S3" />
+        <label for="q9_S3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>현재의 상황보다는 미래의 가능성과 경향성에 관심이 많나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q10" id="q10_N3" value="N3" />
+        <label for="q10_N3"></label>
+        <input type="radio" name="q10" id="q10_N2" value="N2" />
+        <label for="q10_N2"></label>
+        <input type="radio" name="q10" id="q10_N1" value="N1" />
+        <label for="q10_N1"></label>
+        <input type="radio" name="q10" id="q10_NS0" value="NS0" />
+        <label for="q10_NS0"></label>
+        <input type="radio" name="q10" id="q10_S1" value="S1" />
+        <label for="q10_S1"></label>
+        <input type="radio" name="q10" id="q10_S2" value="S2" />
+        <label for="q10_S2"></label>
+        <input type="radio" name="q10" id="q10_S3" value="S3" />
+        <label for="q10_S3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+      </div>
+      <!-- F / T -->
+      <div class="question-group" id="group3">
+        <br />
+        <br />
+        <br />
+        <p>다른 사람들의 감정과 필요를 고려하는 것을 좋아하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q11" id="q11_F3" value="F3" />
+        <label for="q11_F3"></label>
+        <input type="radio" name="q11" id="q11_F2" value="F2" />
+        <label for="q11_F2"></label>
+        <input type="radio" name="q11" id="q11_F1" value="F1" />
+        <label for="q11_F1"></label>
+        <input type="radio" name="q11" id="q11_FT0" value="FT0" />
+        <label for="q11_FT0"></label>
+        <input type="radio" name="q11" id="q11_T1" value="T1" />
+        <label for="q11_T1"></label>
+        <input type="radio" name="q11" id="q11_T2" value="T2" />
+        <label for="q11_T2"></label>
+        <input type="radio" name="q11" id="q11_T3" value="T3" />
+        <label for="q11_T3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>상대방의 감정에 민감하게 대응하고 공감하는 편인가요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q12" id="q12_F3" value="F3" />
+        <label for="q12_F3"></label>
+        <input type="radio" name="q12" id="q12_F2" value="F2" />
+        <label for="q12_F2"></label>
+        <input type="radio" name="q12" id="q12_F1" value="F1" />
+        <label for="q12_F1"></label>
+        <input type="radio" name="q12" id="q12_FT0" value="FT0" />
+        <label for="q12_FT0"></label>
+        <input type="radio" name="q12" id="q12_T1" value="T1" />
+        <label for="q12_T1"></label>
+        <input type="radio" name="q12" id="q12_T2" value="T2" />
+        <label for="q12_T2"></label>
+        <input type="radio" name="q12" id="q12_T3" value="T3" />
+        <label for="q12_T3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>자신의 가치관과 타인의 가치관을 중요시하고 존중하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q13" id="q13_F3" value="F3" />
+        <label for="q13_F3"></label>
+        <input type="radio" name="q13" id="q13_F2" value="F2" />
+        <label for="q13_F2"></label>
+        <input type="radio" name="q13" id="q13_F1" value="F1" />
+        <label for="q13_F1"></label>
+        <input type="radio" name="q13" id="q13_FT0" value="FT0" />
+        <label for="q13_FT0"></label>
+        <input type="radio" name="q13" id="q13_T1" value="T1" />
+        <label for="q13_T1"></label>
+        <input type="radio" name="q13" id="q13_T2" value="T2" />
+        <label for="q13_T2"></label>
+        <input type="radio" name="q13" id="q13_T3" value="T3" />
+        <label for="q13_T3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>조화롭고 화합적인 분위기를 조성하는 것을 좋아하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q14" id="q14_F3" value="F3" />
+        <label for="q14_F3"></label>
+        <input type="radio" name="q14" id="q14_F2" value="F2" />
+        <label for="q14_F2"></label>
+        <input type="radio" name="q14" id="q14_F1" value="F1" />
+        <label for="q14_F1"></label>
+        <input type="radio" name="q14" id="q14_FT0" value="FT0" />
+        <label for="q14_FT0"></label>
+        <input type="radio" name="q14" id="q14_T1" value="T1" />
+        <label for="q14_T1"></label>
+        <input type="radio" name="q14" id="q14_T2" value="T2" />
+        <label for="q14_T2"></label>
+        <input type="radio" name="q14" id="q14_T3" value="T3" />
+        <label for="q14_T3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>타인의 의견과 감정을 고려하여 의사결정을 내리시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q15" id="q15_F3" value="F3" />
+        <label for="q15_F3"></label>
+        <input type="radio" name="q15" id="q15_F2" value="F2" />
+        <label for="q15_F2"></label>
+        <input type="radio" name="q15" id="q15_F1" value="F1" />
+        <label for="q15_F1"></label>
+        <input type="radio" name="q15" id="q15_FT0" value="FT0" />
+        <label for="q15_FT0"></label>
+        <input type="radio" name="q15" id="q15_T1" value="T1" />
+        <label for="q15_T1"></label>
+        <input type="radio" name="q15" id="q15_T2" value="T2" />
+        <label for="q15_T2"></label>
+        <input type="radio" name="q15" id="q15_T3" value="T3" />
+        <label for="q15_T3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+      </div>
+      <!-- J / P -->
+      <div class="question-group" id="group4">
+        <br />
+        <br />
+        <br />
+        <p>일정과 계획을 따르는 것을 선호하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q16" id="q16_J3" value="J3" />
+        <label for="q16_J3"></label>
+        <input type="radio" name="q16" id="q16_J2" value="J2" />
+        <label for="q16_J2"></label>
+        <input type="radio" name="q16" id="q16_J1" value="J1" />
+        <label for="q16_J1"></label>
+        <input type="radio" name="q16" id="q16_JP0" value="JP0" />
+        <label for="q16_JP0"></label>
+        <input type="radio" name="q16" id="q16_P1" value="P1" />
+        <label for="q16_P1"></label>
+        <input type="radio" name="q16" id="q16_P2" value="P2" />
+        <label for="q16_P2"></label>
+        <input type="radio" name="q16" id="q16_P3" value="P3" />
+        <label for="q16_P3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>구조화된 환경에서 일하고 계획을 세우는 것을 좋아하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q17" id="q17_J3" value="J3" />
+        <label for="q17_J3"></label>
+        <input type="radio" name="q17" id="q17_J2" value="J2" />
+        <label for="q17_J2"></label>
+        <input type="radio" name="q17" id="q17_J1" value="J1" />
+        <label for="q17_J1"></label>
+        <input type="radio" name="q17" id="q17_JP0" value="JP0" />
+        <label for="q17_JP0"></label>
+        <input type="radio" name="q17" id="q17_P1" value="P1" />
+        <label for="q17_P1"></label>
+        <input type="radio" name="q17" id="q17_P2" value="P2" />
+        <label for="q17_P2"></label>
+        <input type="radio" name="q17" id="q17_P3" value="P3" />
+        <label for="q17_P3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>일을 끝내고 마무리하는 것을 중요시하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q18" id="q18_J3" value="J3" />
+        <label for="q18_J3"></label>
+        <input type="radio" name="q18" id="q18_J2" value="J2" />
+        <label for="q18_J2"></label>
+        <input type="radio" name="q18" id="q18_J1" value="J1" />
+        <label for="q18_J1"></label>
+        <input type="radio" name="q18" id="q18_JP0" value="JP0" />
+        <label for="q18_JP0"></label>
+        <input type="radio" name="q18" id="q18_P1" value="P1" />
+        <label for="q18_P1"></label>
+        <input type="radio" name="q18" id="q18_P2" value="P2" />
+        <label for="q18_P2"></label>
+        <input type="radio" name="q18" id="q18_P3" value="P3" />
+        <label for="q18_P3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>계획에 따라 진행되는 것을 좋아하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q19" id="q19_J3" value="J3" />
+        <label for="q19_J3"></label>
+        <input type="radio" name="q19" id="q19_J2" value="J2" />
+        <label for="q19_J2"></label>
+        <input type="radio" name="q19" id="q19_J1" value="J1" />
+        <label for="q19_J1"></label>
+        <input type="radio" name="q19" id="q19_JP0" value="JP0" />
+        <label for="q19_JP0"></label>
+        <input type="radio" name="q19" id="q19_P1" value="P1" />
+        <label for="q19_P1"></label>
+        <input type="radio" name="q19" id="q19_P2" value="P2" />
+        <label for="q19_P2"></label>
+        <input type="radio" name="q19" id="q19_P3" value="P3" />
+        <label for="q19_P3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <p>결정을 내리고 실행하기 전에 충분한 정보와 계획을 수립하시나요?</p>
+        <br />
+        <span class="left">동의</span>
+        <input type="radio" name="q20" id="q20_J3" value="J3" />
+        <label for="q20_J3"></label>
+        <input type="radio" name="q20" id="q20_J2" value="J2" />
+        <label for="q20_J2"></label>
+        <input type="radio" name="q20" id="q20_J1" value="J1" />
+        <label for="q20_J1"></label>
+        <input type="radio" name="q20" id="q20_JP0" value="JP0" />
+        <label for="q20_JP0"></label>
+        <input type="radio" name="q20" id="q20_P1" value="P1" />
+        <label for="q20_P1"></label>
+        <input type="radio" name="q20" id="q20_P2" value="P2" />
+        <label for="q20_P2"></label>
+        <input type="radio" name="q20" id="q20_P3" value="P3" />
+        <label for="q20_P3"></label> <span class="right">비동의</span> <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+      </div>
+
+      <div class="button-container">
+        <button type="button" id="prevButton" style="display: none">
+          이전
+        </button>
+        <button type="button" id="nextButton">다음</button>
+        <button type="submit" id="resultButton" style="display: none">
+          검사 결과
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <p style="color: gray">©2023 KIM MIN SEO</p>
+    </form>
+
+    <div id="result">
+      <br />
+      <br />
+      <br />
+      <h2>당신의 MBTI 유형은 <span id="mbtiResult"></span> 입니다!</h2>
+      <img id="mbtiImage" src="" alt="MBTI 이미지" />
+      <p style="font-size: 23px; color: #80858e"></p>
+    </div>
+
+    <footer id="progressFooter">
+      <span id="progress">0%</span>
+      <span>
+        <div id="progressBarContainer">
+          <div id="progressBar"></div>
+        </div>
+      </span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mbti.js"></script>
+  </body>
+</html>

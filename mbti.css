@@ -1,0 +1,250 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  form {
+    width: 100%; /* 원하는 폭으로 조절하세요. */
+    margin: auto;
+  }
+
+  .question-group p {
+    font-size: 23px;
+    font-weight: bold;
+    color: #586071;
+  }
+
+  hr {
+    border-color: #fafafb;
+    opacity: 0.6;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #586071;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #34a474;
+    padding: 50px;
+  }
+
+  .left {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #6fbd9a;
+  }
+
+  .right {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #88619a;
+  }
+
+  #mbtiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* 버튼과 폼 사이에 여백을 조절합니다. */
+  }
+  /* 라디오 버튼 스타일링 */
+  input[type="radio"] + label {
+    margin: 40px; /* 각 라디오 버튼 사이의 간격을 설정할 수 있습니다. */
+    transform: scale(4); /* 기본 크기의 2배로 확대합니다. */
+    border-radius: 50%;
+  }
+
+  input[type="radio"][value$="3"] + label,
+  input[type="radio"][value$="3"]:checked + label {
+    transform: scale(7); /* 매우 동의, 매우 비동의 버튼 크기 조절 */
+  }
+
+  input[type="radio"][value$="2"] + label,
+  input[type="radio"][value$="2"]:checked + label {
+    transform: scale(6); /* 동의, 비동의 버튼 크기 조절 */
+  }
+
+  input[type="radio"][value$="1"] + label,
+  input[type="radio"][value$="1"]:checked + label {
+    transform: scale(5); /* 약간 동의, 약간 비동의 버튼 크기 조절 */
+  }
+
+  input[type="radio"][value$="0"] + label,
+  input[type="radio"][value$="0"]:checked + label {
+    transform: scale(4); /* 모름 버튼 크기 조절 */
+  }
+
+  input[type="radio"][value^="E"] + label,
+  input[type="radio"][value^="N"] + label,
+  input[type="radio"][value^="F"] + label,
+  input[type="radio"][value^="J"] + label {
+    border: 0.1px solid #6fbd9a;
+  }
+
+  input[type="radio"][value^="E"]:checked + label,
+  input[type="radio"][value^="N"]:checked + label,
+  input[type="radio"][value^="F"]:checked + label,
+  input[type="radio"][value^="J"]:checked + label {
+    border: 0.1px solid #6fbd9a;
+    background-color: #6fbd9a;
+  }
+
+  input[type="radio"][value^="E"]:hover + label,
+  input[type="radio"][value^="N"]:hover + label,
+  input[type="radio"][value^="F"]:hover + label,
+  input[type="radio"][value^="J"]:hover + label {
+    border: 0.1px solid #6fbd9a;
+    background-color: #6fbd9a;
+  }
+
+  input[type="radio"][value^="I"] + label,
+  input[type="radio"][value^="S"] + label,
+  input[type="radio"][value^="T"] + label,
+  input[type="radio"][value^="P"] + label {
+    border: 0.1px solid #88619a;
+  }
+
+  input[type="radio"][value^="I"]:checked + label,
+  input[type="radio"][value^="S"]:checked + label,
+  input[type="radio"][value^="T"]:checked + label,
+  input[type="radio"][value^="P"]:checked + label {
+    border: 0.1px solid #88619a;
+    background-color: #88619a;
+  }
+
+  input[type="radio"][value^="I"]:hover + label,
+  input[type="radio"][value^="S"]:hover + label,
+  input[type="radio"][value^="T"]:hover + label,
+  input[type="radio"][value^="P"]:hover + label {
+    border: 0.1px solid #88619a;
+    background-color: #88619a;
+  }
+
+  input[type="radio"][value$="0"] + label,
+  input[type="radio"][value$="0"] + label,
+  input[type="radio"][value$="0"] + label,
+  input[type="radio"][value$="0"] + label {
+    border: 0.1px solid #9b9faa;
+  }
+
+  input[type="radio"][value$="0"]:checked + label,
+  input[type="radio"][value$="0"]:checked + label,
+  input[type="radio"][value$="0"]:checked + label,
+  input[type="radio"][value$="0"]:checked + label {
+    border: 0.1px solid #9b9faa;
+    background-color: #9b9faa;
+  }
+
+  input[type="radio"][value$="0"]:hover + label,
+  input[type="radio"][value$="0"]:hover + label,
+  input[type="radio"][value$="0"]:hover + label,
+  input[type="radio"][value$="0"]:hover + label {
+    border: 0.1px solid #9b9faa;
+    background-color: #9b9faa;
+  }
+
+  input[type="radio"] {
+    display: none; /* 실제 라디오 버튼을 숨김 */
+  }
+
+  /* 사용자 정의 라디오 버튼 외관을 스타일링합니다. */
+  label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.5s ease;
+  }
+
+  #prevButton {
+    padding: 20px 80px 20px 80px;
+    border-radius: 50px;
+    border: 1px solid #88619a;
+    background-color: #88619a;
+    font-size: 28px;
+    color: white;
+    margin-right: 5px;
+  }
+
+  #nextButton,
+  #resultButton {
+    padding: 20px 80px 20px 80px;
+    border-radius: 50px;
+    border: 1px solid #6fbd9a;
+    background-color: #6fbd9a;
+    font-size: 28px;
+    color: white;
+    margin-left: 5px;
+  }
+
+  .custom-text {
+    font-weight: bolder;
+    color: pink;
+    font-size: 50px;
+  }
+
+  .custom-text1 {
+    font-weight: bolder;
+    color: yellow;
+    font-size: 50px;
+  }
+
+  .custom-text2 {
+    font-weight: bolder;
+    color: yellow;
+    font-size: 20px;
+  }
+
+  #progress {
+    color: white;
+  }
+
+  #progressBarContainer {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin-bottom: 18px;
+  }
+
+  #progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #34a474;
+  }
+
+  #result {
+    width: 1000px;
+  }
+
+  #mbtiResult {
+    font-size: 38px;
+  }
