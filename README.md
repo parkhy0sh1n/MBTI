@@ -6,7 +6,7 @@
     
 #### 2. 프로젝트 소개
 
-    - 16Personalities 웹 사이트를 클론하여 만든 웹 사이트입니다.
+    - 16Personalities 웹 사이트를 클론하여 Vanilla JS + JQuery를 이용해 만든 MBTI 테스트입니다.
 
 #### 3. 구현 플랫폼 
 
